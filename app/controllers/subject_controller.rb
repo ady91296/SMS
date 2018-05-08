@@ -12,7 +12,6 @@ class SubjectController < ApplicationController
 	end
 
 	def create 
-		binding.pry
 	  @sclass=SClass.new(sclass_params)
 	  if @sclass.save
 	  @subject = Subject.new(subject_params)

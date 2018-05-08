@@ -11,4 +11,10 @@ Rails.application.routes.draw do
  	resources :s_class
  	resources :subject
  	resources :course
+ 	resources :attendance do
+		collection do
+	    	get :adminview
+	    	get :leaveattendance
+	 	 end
+	end
 end
